@@ -1,21 +1,17 @@
 .App {
+  display: flex;
+  flex-direction: column;
   text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
 }
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(5px + 2vmin);
   color: white;
 }
 
@@ -23,11 +19,163 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.title {
+  font-size: 50px;
+  margin-top: 10px;
+}
+
+.filter {
+  display: flex;
+  margin: 20px 50px;
+}
+
+.table {
+  display: table;
+  border-spacing: 0;
+  border-collapse: collapse;
+  margin: 24px 50px;
+  overflow-x: auto;
+  box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2);
+}
+
+.tableHead {
+  display: table-header-group;
+  background-color: #D3D3D3;
+}
+
+.tableRow {
+  color: inherit;
+  display: table-row;
+  outline: none;
+  vertical-align: middle;
+}
+
+.tableCell {
+  display: table-cell;
+  padding: 14px 40px 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid rgba(224, 224, 224, 1);
+  letter-spacing: 0.01071em;
+  vertical-align: inherit;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  border: 1px solid rgba(224, 224, 224, 1);
+}
+
+.tableBody {
+  display: table-row-group;
+  vertical-align: middle;
+  border-color: inherit;
+}
+
+.group-select {
+  display: flex;
+  flex: 4;
+  flex-direction: row;
+}
+
+.button-container {
+  display: flex;
+  flex: 1 1;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  display: flex;
+  flex: 1;
+  position: relative;
+  flex-direction: column;
+  vertical-align: top;
+  margin: 8px;
+}
+
+.input-label {
+  color: rgba(0, 0, 0, 0.54);
+  margin: 5px;
+  text-align: left;
+}
+
+.select-icon {
+  overflow: hidden;
+  box-sizing: inherit;
+  fill: currentColor;
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  font-size: 1.5rem;
+  user-select: none;
+  top: 50%;
+  right: 15%;
+  color: rgba(0, 0, 0, 0.54);
+  position: absolute;
+  pointer-events: none;
+}
+
+.select-container {
+  color: rgba(0, 0, 0, 0.87);
+  cursor: text;
+  display: inline-flex;
+  font-size: 1rem;
+  box-sizing: border-box;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  line-height: 1.1875em;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.select {
+  height: 30px;
+  display: block;
+  box-sizing: content-box;
+  cursor: pointer;
+  min-width: 16px;
+  -webkit-appearance: none;
+  border: 1px solid #ced4da;
+  padding: 10px 26px 10px 12px;
+  position: relative;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #fff;
+  width: 80%;
+}
+
+.button {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  padding: 6px 16px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  line-height: 1.75;
+  font-weight: 500;
+  border-radius: 4px;
+  letter-spacing: 0.02857em;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.87);
+  box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.2);
+  background-color: #e0e0e0;
+  margin: 8px;
+}
+
+.button-label {
+  width: 100%;
+}
+
+.input-text {
+  font: inherit;
+  color: currentColor;
+  height: 30px;
+  display: block;
+  min-width: 0;
+  box-sizing: content-box;
+  width: 80%;
+  border: 1px solid #ced4da;
+  padding: 10px 12px;
+  position: relative;
+  font-size: 16px;
+  border-radius: 4px;
+  background-color: #fff;
 }
